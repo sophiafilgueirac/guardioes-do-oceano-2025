@@ -1,92 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Dolphin Guardião</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Guardiões do Oceano 2025</title>
+
+<!-- Fontes do Google -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Estilos -->
 <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<div id="app">
-  <header class="topbar">
-    <h1>Dolphin Guardião</h1>
-    <nav class="tabs">
-      <button class="tab-btn active" data-target="home">Início</button>
-      <button class="tab-btn" data-target="story">História</button>
-      <button class="tab-btn" data-target="game">Limpar o Mar</button>
-      <button class="tab-btn" data-target="care">Cuidar</button>
-      <button class="tab-btn" data-target="credits">Créditos</button>
-    </nav>
-  </header>
+<header>
+<h1>Guardiões do Oceano 2025 🌊</h1>
+<nav>
+<ul>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#objetivos">Objetivos</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</header>
 
-  <main class="screen home active" id="home">
-    <img src="assets/screen_welcome.png" class="hero" alt="welcome" />
-    <div class="card welcome-card">
-      <h2>Olá, Guardião!</h2>
-      <p>Vamos salvar o oceano? Junte-se ao Dolphin e jogue para limpar as águas.</p>
-      <img src="assets/dolphin.png" class="dolphin" alt="dolphin" />
-    </div>
-  </main>
+<main>
+<section id="sobre">
+<img src="img/screen_welcome.png" alt="Bem-vindo ao Guardiões do Oceano">
+<h2>Sobre o projeto</h2>
+<p>
+O projeto <strong>Guardiões do Oceano</strong> busca conscientizar e inspirar
+ações em prol da preservação dos mares e da vida marinha.
+</p>
+</section>
 
-  <main class="screen story" id="story">
-    <div class="card story-card">
-      <h2>História do Dolphin</h2>
-      <div id="storyText">Era uma vez um golfinho alegre chamado Dolphin. Ele adorava brincar com as ondas e dançar entre os corais coloridos.</div>
-      <div class="story-controls">
-        <button id="prevStory">Voltar</button>
-        <button id="nextStory">Avançar</button>
-      </div>
-    </div>
-  </main>
+<section id="objetivos">
+<img src="img/dolphin.png" alt="Golfinho no oceano">
+<h2>Nossos Objetivos</h2>
+<ul>
+<li>Promover educação ambiental</li>
+<li>Estimular a coleta seletiva</li>
+<li>Proteger a fauna marinha</li>
+</ul>
+</section>
 
-  <main class="screen game" id="game">
-    <div class="game-ui">
-      <div class="hud">
-        <div>Score: <span id="score">0</span></div>
-        <div>Tempo: <span id="time">30</span>s</div>
-      </div>
-      <div id="field" class="field" tabindex="0">
-        <img id="bin" src="assets/bin.png" class="bin" alt="bin" />
-      </div>
-      <div class="game-controls">
-        <button id="startGame">Iniciar Jogo</button>
-        <button id="stopGame">Parar</button>
-      </div>
-    </div>
-  </main>
+<section id="contato">
+<h2>Entre em Contato</h2>
+<p>
+Quer se tornar um Guardião do Oceano? 🌍
+Envie um e-mail para <a href="mailto:contato@guarioesdooceanos.com">contato@guarioesdooceanos.com</a>
+</p>
+</section>
+</main>
 
-  <main class="screen care" id="care">
-    <div class="card care-card">
-      <h2>Cuide do Dolphin</h2>
-      <img id="careDolphin" src="assets/dolphin.png" class="care-dolphin" alt="dolphin care" />
-      <div class="care-buttons">
-        <button data-action="shower">Banho</button>
-        <button data-action="feed">Comida</button>
-        <button data-action="rest">Descansar</button>
-      </div>
-      <div class="status">
-        <label>Limpeza do oceano: <span id="oceanVal">0</span>%</label>
-        <progress id="oceanBar" max="100" value="0"></progress>
-        <label>Humor do Dolphin: <span id="moodVal">60</span>%</label>
-        <progress id="moodBar" max="100" value="60"></progress>
-      </div>
-    </div>
-  </main>
-
-  <main class="screen credits" id="credits">
-    <div class="card credits-card">
-      <h2>Créditos</h2>
-      <p>Sophia Filgueira</p>
-      <p>Manuella Chia</p>
-      <p>Raphaela Santana</p>
-      <hr />
-      <p>Contato: 11 98985-2004</p>
-      <p>Email: <a href="mailto:sophiafilgueira9@gmail.com">sophiafilgueira9@gmail.com</a></p>
-    </div>
-  </main>
-
-  <audio id="ambient" src="assets/ambient.wav" loop preload="auto"></audio>
-</div>
-<script src="script.js"></script>
-</body>
-</html>
+<foot
+ 
+     
+  
