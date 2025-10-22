@@ -1,0 +1,36 @@
+
+:root{
+  --bg:#e6fbff;
+  --card:#ffffff;
+  --accent:#00a3d9;
+  --muted:#6b7c8a;
+  --radius:14px;
+}
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{margin:0;background:linear-gradient(180deg,#a7e0ff 0%, #e6fbff 100%);min-height:100vh;color:#04323b;}
+.topbar{display:flex;flex-direction:column;align-items:center;padding:14px 12px;position:sticky;top:0;background:rgba(255,255,255,0.6);backdrop-filter:blur(6px);z-index:20}
+.topbar h1{margin:0;font-size:20px;color:var(--accent)}
+.tabs{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.tab-btn{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 12px;border-radius:999px;font-weight:600;cursor:pointer}
+.tab-btn.active{background:var(--accent);color:white;border-color:transparent;box-shadow:0 6px 18px rgba(0,163,217,0.18)}
+.screen{display:none;padding:18px;min-height:calc(100vh - 120px);}
+.screen.active{display:block}
+.hero{width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(2,30,45,0.08)}
+.card{max-width:920px;margin:18px auto;background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,30,45,0.06)}
+.welcome-card{position:relative;text-align:center}
+.dolphin{width:220px;margin-top:10px}
+.story-card{min-height:220px}
+.story-controls{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.game-ui{max-width:920px;margin:12px auto}
+.hud{display:flex;justify-content:space-between;padding:8px 12px;color:var(--muted);font-weight:700}
+.field{position:relative;background:linear-gradient(180deg,#9fe0ff,#66c6e8);height:420px;border-radius:12px;overflow:hidden;margin-top:12px;touch-action:none}
+.bin{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);width:84px;user-select:none;touch-action:none;z-index:15}
+.game-controls{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.care-dolphin{width:220px;display:block;margin:10px auto}
+.care-buttons{display:flex;gap:8px;justify-content:center;margin-top:8px}
+.status{padding:10px 20px}
+.credits-card{text-align:center}
+@media(max-width:640px){
+  .dolphin{width:160px}
+  .field{height:60vh}
+}
